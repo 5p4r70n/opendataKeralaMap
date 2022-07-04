@@ -30,7 +30,7 @@
     "strictTemplates": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "allowJs": true,
+    
 
   }
 }

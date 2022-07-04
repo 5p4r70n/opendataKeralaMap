@@ -15,4 +15,5 @@ export class ScriptServiceService {
     renderer.appendChild(this.document.body, script);
     return script;
   }
+  
 }

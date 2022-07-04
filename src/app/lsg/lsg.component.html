@@ -1,66 +1,20 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>
-        
-        Map Kerala
-        
-    </title>
+    <title>Map Kerala</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        @import url('https://smc.org.in/fonts/gayathri.css');
 
-        html, body {
-            font-family: 'Gayathri', sans-serif;
-        }
-    </style>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VZQ4QMZRSC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VZQ4QMZRSC');
-</script>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
-<style>
-    #controls {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex: 0;
-        align-items: center;
-        justify-items: stretch;
-        justify-content: space-between;
-    }
-
-    #map {
-        min-height: 70vh;
-        flex: 1;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    #metadata {
-        display: none;
-    }
-</style>
-
-    <meta property="og:title" content="{{lsgdata.nameEn}} | {{lsgdata.nameMl}}" />
+<meta property="og:title" content="{{lsgdata.nameEn}} | {{lsgdata.nameMl}}" />
 <meta property="og:description" content="Geospatial data about {{lsgdata.nameEn}}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{districtName}}/{{lsgdata.url}/{{lsgdata.id}" /><meta property="og:image" content="../../assets/img/Q4705084.png" /><meta property="article:section" content="Alappuzha" />
+<meta property="og:url" content="{{districtName}}/{{lsgdata.url}}/{{lsgdata.id}}" />
+<meta property="og:image" content="../../assets/img/{{lsgdata.id}}.png" /><meta property="article:section" content="{{districtName | titlecase}}" />
 
 <meta property="og:site_name" content="Map Kerala" />
 
@@ -72,7 +26,7 @@
 <meta name="twitter:description" content="Geospatial data about {{lsgdata.nameEn}}"/>
 
 
-</head>
+</head> -->
 
 <body class="d-flex align-items-center flex-column">
     
@@ -91,7 +45,7 @@
 <li class="nav-link rounded m-1 p-2">
     <a class="text-dark text-decoration-none" id="district-link" href="{{districtName}}/"
         data-mk-key="district">
-        {{districtName}}
+        {{districtName | titlecase}}
     </a>
 </li>
 <li class="nav-link active bg-dark rounded m-1 p-2">
@@ -448,4 +402,5 @@
 
 </body>
 
-</html>
+
+<!-- </html> -->
