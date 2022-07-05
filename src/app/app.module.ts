@@ -5,17 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DistrictComponent } from './district/district.component';
 import { HomeComponent } from './home/home.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import{HttpClientModule} from "@angular/common/http";
-import { LsgComponent } from './lsg/lsg.component'
+import { LsgComponent } from './lsg/lsg.component';
+import { AboutComponent } from './about/about.component';
+import { CreditsComponent } from './credits/credits.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DistrictComponent,
     HomeComponent,
-    NavBarComponent,
-    LsgComponent
+    LsgComponent,
+    AboutComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,
